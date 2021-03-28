@@ -4,7 +4,7 @@ const express = require('express')//need the QUOTES
 const app = express()
 app.use(express.urlencoded({extended:true}))
 app.use(express.static('public'))
-app.use(express(json))
+app.use(express.json())
 //WHATTT CORSS MODULEEEEEE
 const cors = require('cors')
 
