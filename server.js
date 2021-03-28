@@ -2,6 +2,9 @@ const express = require('express')//need the QUOTES
 //now that we have express
 //a convention
 const app = express()
+app.use(express.urlencoded({extended:true}))
+app.use(express.static('public'))
+app.use(express(json))
 //WHATTT CORSS MODULEEEEEE
 const cors = require('cors')
 
